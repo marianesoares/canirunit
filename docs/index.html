@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can I Run It? - PC Game Requirements Checker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #171A21; /* Steam Dark */
+            color: #C6D4DF;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .accent-bg { background-color: #1B2838; }
+        .btn-blue { background-color: #66C0F4; }
+        .btn-blue:hover { background-color: #41a4de; }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+
+    <!-- Hero Section -->
+    <header class="flex-grow flex items-center justify-center text-center px-4 py-20">
+        <div class="max-w-3xl mx-auto accent-bg p-10 rounded-2xl shadow-2xl border border-gray-700">
+            <h1 class="text-5xl font-bold text-white mb-4">Can I Run It?</h1>
+            <p class="text-xl mb-8 text-gray-300">
+                Instantly check if your PC can run any Steam game. No sign-ups. No manual entry. Auto-detects your specs and compares them side-by-side.
+            </p>
+            
+            <a href="https://github.com/yourusername/canirunit/releases/latest/download/CanIRunIt.exe" 
+               class="btn-blue text-white font-bold py-4 px-8 rounded-lg text-lg inline-flex items-center transition duration-200">
+                <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                </svg>
+                Download for Windows
+            </a>
+            <p class="mt-4 text-sm text-gray-500">Requires Windows 10/11 (64-bit). Portable executable, no installation required.</p>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-[#121419]">
+        <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-center">
+            <div class="p-6">
+                <div class="text-4xl mb-4">⚡</div>
+                <h3 class="text-xl font-bold text-white mb-2">Auto-Detection</h3>
+                <p class="text-gray-400">Instantly reads your CPU, GPU, RAM, and Storage using Windows WMI. No manual typing required.</p>
+            </div>
+            <div class="p-6">
+                <div class="text-4xl mb-4">🎮</div>
+                <h3 class="text-xl font-bold text-white mb-2">Steam Integration</h3>
+                <p class="text-gray-400">Search the entire Steam catalog. Fetches official minimum and recommended system requirements directly.</p>
+            </div>
+            <div class="p-6">
+                <div class="text-4xl mb-4">📊</div>
+                <h3 class="text-xl font-bold text-white mb-2">Instant Verdict</h3>
+                <p class="text-gray-400">Color-coded side-by-side comparison tells you immediately if you'll hit a bottleneck with your hardware.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-gray-500 text-sm">
+        <p>Built with C# and WPF. Data provided by the public Steam Storefront API.</p>
+        <p class="mt-2">
+            <a href="https://github.com/yourusername/canirunit" class="text-[#66C0F4] hover:underline">View Source on GitHub</a>
+        </p>
+    </footer>
+
+</body>
+</html>
